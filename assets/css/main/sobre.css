@@ -1,0 +1,186 @@
+.sobre {
+    text-align: center;
+    margin-top: 20px;
+}
+.sobre__div-img {
+  display: none;
+}
+.sobre__titulo {
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+.sobre__texto {
+    font-size: 12px;
+    text-align: center;
+    margin: 20px 20px 0 20px;
+    font-weight: 400;
+}
+
+/* AQUI EMBAIXO BOTAO */ 
+.sobre__ul {
+    /* margin-left: auto;
+    margin-right: auto; */
+    list-style-type: none;
+  }
+  
+  .sobre__texto {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    padding-left: 10px;
+    position: relative;
+    /* transition: background .3s; */
+  }
+  
+  /* –––––––––––CHECKBOX CONTAINER STYLES–––––––––––– */
+  .sobre__container {
+    position: relative;
+    height: auto;
+    border-top: 0;
+  }
+  
+  [type="checkbox"] {
+    position: absolute;
+    left: -9999px;
+  }
+  
+  .sobre__label {
+    background-color: var(--cor-branca);
+    border-radius: 30px;
+    color: var(--cor-preto);
+    display: block;
+    width: 35vh;
+    height: 10vh;
+    position: absolute;
+    left: 25%;
+    top: -50px;
+    transition: top .45s cubic-bezier(.44, .99, .48, 1);
+    -webkit-animation: sudo .85s linear infinite alternate;
+    animation: sudo .85s linear infinite alternate;
+  }
+  /*
+   * use the rule below for testing purposes
+   * label:hover {
+   *    background: yellow;
+   *  }
+   */
+  
+  .sobre__label:before,
+  .sobre__label:after {
+    position:fixed;
+  }
+  
+  .sobre__label:before {
+    content: '';
+    /* left: 10px; */
+  }
+  
+  .sobre__label:after {
+    content: 'Ver mais  \2193';
+    left: 25%;
+    top: 33.33%;
+    -webkit-animation: sudo .85s linear infinite alternate;
+    animation: sudo .85s linear infinite alternate;
+  }
+  
+  @keyframes sudo {
+    from {
+      -webkit-transform: translateY(-2px);
+      transform: translateY(-2px);
+    }
+    to {
+      -webkit-transform: translateY(2px);
+      transform: translateY(2px);
+    }
+  }
+  
+  .sobre__input[type="checkbox"] ~ ul {
+    width: 100%;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .45s cubic-bezier(.44, .99, .48, 1);
+  }
+  /* CHECKED STATE STYLES
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  
+  [type="checkbox"]:checked ~ ul {
+    /**
+     * the value of the `max-height` property specifies the transition speed
+     * set a very big value (e.g. 9999px) to see the difference
+     */
+    
+    max-height: 230px;
+  }
+  
+  [type="checkbox"]:checked + .sobre__label {
+    top: 100%;
+  }
+  
+  /* [type="checkbox"]:checked + label:before {
+    content: '';
+  } */
+  
+  [type="checkbox"]:checked + .sobre__label:after {
+    content: 'Ver Menos \2191';
+  }
+  
+  ul li:last-child {
+    margin-bottom: 50px;
+  }
+  @media screen and (min-width: 768px){
+  
+    .sobre__label {
+      display: none;
+    }
+    .sobre__input[type="checkbox"] ~ ul {
+      max-height: 100%;
+    }
+    .sobre__div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .sobre__titulo {
+      padding-bottom: 0;
+  }
+  .sobre__texto {
+    text-align:right;
+  }
+    .sobre__div-texto {
+      width: 50%;
+    }
+    .sobre__div-img {
+      display: block;
+      width: 50%;
+    }
+    .sobre__div-img-tamanho {
+      width: 100%;
+    }
+
+    ul li:last-child {
+      margin-bottom: 0;
+    }
+
+  }
+  @media screen and (min-width: 1024px){
+
+  .sobre__div {
+    justify-content: space-around;
+  }
+.sobre__titulo {
+  font-size: 48px;
+}
+.sobre__texto {
+  font-size: 16px;
+}
+  }
+
+  @media screen and (min-width: 1360px) {
+    .sobre__div-img {
+      width: 50%;
+    }
+    .sobre__div-img-tamanho {
+      width: 80%;
+    }
+  }

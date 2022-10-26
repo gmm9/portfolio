@@ -1,0 +1,54 @@
+
+.bloco__trabalho {
+    background-color: var(--cor-cinza-branco);
+    width: 80%;
+    height: 148px;
+    border-radius: 24px;
+    color: var(--cor-preto);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    bottom: 50px;
+}
+.bloco__titulo {
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 10px;
+}
+.bloco__texto {
+    font-size: 11px;
+    font-weight: 500;
+} 
+
+.bloco__trabalho-botao {
+    background-color: var(--cor-preto);
+    width: 50%;
+    padding: 15px;
+    border-radius: 30px;
+
+}
+@media screen and (min-width: 768px){
+
+    .bloco__trabalho {
+        width: 50%;
+    }
+    .bloco__titulo {
+        font-size: 20px;
+    }
+    .bloco__texto {
+        font-size: 13px;
+    } 
+    
+}
+
+@media screen and (min-width: 1024px){
+    .bloco__titulo {
+        font-size: 20px;
+    }
+    .bloco__texto {
+        font-size: 15px;
+    } 
+}

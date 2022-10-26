@@ -1,0 +1,9 @@
+@import url(./base/base.css);
+@import url(./header/header.css);
+@import url(./header/menu-lateral.css);
+@import url(./main/inicio.css);
+@import url(./main/sobre.css);
+@import url(./main/habilidades.css);
+@import url(./main/projetos.css);
+@import url(./footer/bloco.css);
+@import url(./footer/footer.css);

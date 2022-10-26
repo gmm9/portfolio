@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <title>Portfolio | Gabriel Moura</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav__header">
+            <a class="logo" href="/">Gabriel<br />Moura</a>
+            <div class="desktop-menu">
+                <ul class="desktop-menu-itens">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobre">Sobre Mim</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contatos">Contato</a></li>
+                </ul>
+            </div>
+            <div class="mobile-menu">
+                <i class="fa-solid mobile-menu fa-bars header__menu"></i>
+            </div>
+            <ul class="nav-list">
+                <li class="nav__itens">
+                    <i class="fa-solid fa-house"></i><a class="nav__itens-a" href="#inicio">Inicio</a>
+                </li>
+                <li class="nav__itens">
+                    <i class="fa-solid fa-user"></i><a class="nav__itens-a" href="#sobre">Sobre Mim</a>
+                </li>
+                <li class="nav__itens">
+                    <i class="fa-solid fa-star"></i><a class="nav__itens-a" href="#habilidades">Habilidade</a>
+                </li>
+                <li class="nav__itens">
+                    <i class="fa-solid fa-list-check"></i><a class="nav__itens-a" href="#projetos">Projetos</a>
+                </li>
+                <li class="nav__itens">
+                    <i class="fa-solid fa-phone"></i><a class="nav__itens-a" href="#contatos">Contato</a>
+                </li>
+
+                <div id="linha-horizontal"></div>
+                <div class="nav__contatos">
+                    <a class="nav__contatos-icons"><img src="./assets/img/linkedin.svg" /></a>
+                    <a class="nav__contatos-icons"><img src="./assets/img/whatsapp.svg" /></a>
+                    <a class="nav__contatos-icons"><img src="./assets/img/github.svg" /></a>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="inicio" id="inicio">
+            <div class="inicio__div-texto">
+                <p class="inicio__texto">
+                    Olá, me chamo<br />
+                    <span class="inicio__texto-titulo">Gabriel Moura</span><br />
+                    e sou<br /><span class="inicio__texto-titulo-secundario">Desenvolvedor Front-End</span>
+                </p>
+                <p class="inicio__texto inicio__texto-port">
+                    Sejam bem vindos ao meu portfólio!
+                </p>
+                <div class="inicio__botao">
+                    <a class="inicio__botao-item" href="https://www.linkedin.com/in/gmoura1/" target="_blank">Fale Comigo</a>
+                    <a class="inicio__botao-item transparente" href="#" target="_blank">Gerar CV</a>
+                </div>
+            </div>
+            <img class="inicio__perfil" src="./assets/img/foto.svg" />
+        </section>
+        <section class="sobre" id="sobre">
+            <div class="sobre__div">
+                <div class="sobre__div-img">
+                    <img class="sobre__div-img-tamanho" src="./assets/img/hackerman.jpg" />
+                </div>
+                <div class="sobre__div-texto">
+                    <h2 class="sobre__titulo">Quem sou eu?</h2>
+                    <ul class="sobre__ul">
+                        <li>
+                            <p class="sobre__texto">
+                                Nascido e residente do Rio de Janeiro, sou uma pessoa
+                                apaixonada por desafios, desde pequeno fissurado em
+                                tecnologias e um apaixonado por estrelas.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p class="sobre__texto">
+                                Meu primeiro contato com a programação foi em 2013, quando
+                                comprei o famoso jogo “RPG MAKER MV” que utiliza Ruby como
+                                scripting, e desde então me encantei pelo tema.
+                            </p>
+                        </li>
+                        <li>
+                            <p class="sobre__texto">
+                                Desde 2021, o que antes era apenas um interesse pessoal se
+                                tornou também um interesse profissional, e desde então me
+                                especializo todos os dias nas linguagens mais utilizadas para
+                                web.
+                            </p>
+                        </li>
+                        <li class="sobre__container">
+                            <input type="checkbox" id="check_id" class="sobre__input" />
+                            <label class="sobre__label" for="check_id"></label>
+
+                            <ul>
+                                <li>
+                                    <p class="sobre__texto">
+                                        Sou amante de jogos de simulação e estratégia, gosto de
+                                        passear com cachorros, assistir vídeos de culinária e de
+                                        passeios pelo mundo.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="sobre__texto">
+                                        Atualmente faço faculdade de Análise e Desenvolvimento de
+                                        Sistemas pela UVA, onde adquiri conhecimentos básicos e
+                                        atualmente estou procurando minha primeira experiência
+                                        profissional.
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="habilidades" id="habilidades">
+            <h2 class="habilidades__titulo">Habilidades</h2>
+
+            <div class="swiper swiper1 habilidades__conteudo">
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-wrapper habilidade__class">
+                    <div class="swiper-slide habilidade__item">
+                        <div class="habilidade__item-box">
+                            <img src="./assets/img/html_logo.png" class="habilidades__container-img" />
+                            <h3 class="habilidades__container-titulo">HTML5</h3>
+                            <p class="habilidades__container-texto">
+                                Tecnlogia focada em estruturação de páginas da web.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide habilidade__item">
+                        <div class="habilidade__item-box">
+                            <img src="./assets/img/css_logo.png" class="habilidades__container-img" />
+                            <h3 class="habilidades__container-titulo">CSS3</h3>
+                            <p class="habilidades__container-texto">
+                                Tecnlogia focada em atribuição de estilos à um documento web.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide habilidade__item">
+                        <div class="habilidade__item-box">
+                            <img src="./assets/img/js_logo.png" class="habilidades__container-img" />
+                            <h3 class="habilidades__container-titulo">JavaSCript</h3>
+                            <p class="habilidades__container-texto">
+                                Linguagem de programação interpretada estruturada, e pricnipais da web.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide habilidade__item">
+                        <div class="habilidade__item-box">
+                            <img src="./assets/img/icons8-bootstrap-144.png" class="habilidades__container-img" />
+                            <h3 class="habilidades__container-titulo">Bootstrap</h3>
+                            <p class="habilidades__container-texto">
+                                Framework voltado para componentes de interface e aplicações web.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide habilidade__item">
+                        <div class="habilidade__item-box">
+                            <img src="./assets/img/icons8-sass-144.png" class="habilidades__container-img" />
+                            <h3 class="habilidades__container-titulo">SCSS/SASS</h3>
+                            <p class="habilidades__container-texto">
+                                Uma extensão do css, com ideias de otimizar o css.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide habilidade__item">
+                        <div class="habilidade__item-box">
+                            <img src="./assets/img/git.svg" class="habilidades__container-img" />
+                            <h3 class="habilidades__container-titulo">Git</h3>
+                            <p class="habilidades__container-texto">
+                                Sistema de controle de versões, usado principalmente para desenvolvimento.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide habilidade__item">
+                        <div class="habilidade__item-box">
+                            <img src="./assets/img/icons8-github-128.png" class="habilidades__container-img" />
+                            <h3 class="habilidades__container-titulo">Git/GitHub</h3>
+                            <p class="habilidades__container-texto">
+                                Plataforma de hospedagem de código-fonte e arquivos de controle.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination swiper-pagination1 habilidade__bolinhas"></div>
+            </div>
+        </section>
+
+        <section class="projetos" id="projetos">
+            <h2 class="projeto__titulo">Meus Projetos</h2>
+
+            <div class="swiper swiper2 projeto__container">
+                <div class="swiper-button-next next"></div>
+                <div class="swiper-button-prev prev"></div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide projeto__box">
+                        <div class="projeto__card-externo">
+                            <div class="projeto__card-interno">
+                                <img src="./assets/img/projeto-poke.png" alt="teste" />
+                            </div>
+                            <div class="projeto__card-legenda">
+                                <h3 class="projeto__card-titulo"><a href="#">Pokedéx</a></h3>
+                                <p class="projeto__card-git">
+                                    <a href="#">Acessar repositório Git</a>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- <div class="projeto__card-externo">
+                            <div class="projeto__card-interno">
+                                <img class="projeto__card-interno-img" src="" alt="Em breve" />
+                            </div>
+                            <div class="projeto__card-legenda">
+                                <h3 class="projeto__card-titulo"><a href="#">Pokedéx</a></h3>
+                                <p class="projeto__card-git">
+                                    <a href="#">Acessar repositório Git</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="projeto__card-externo">
+                            <div class="projeto__card-interno">
+                                <img src="./assets/img/projeto-poke.png" alt="teste" />
+                            </div>
+                            <div class="projeto__card-legenda">
+                                <h3 class="projeto__card-titulo"><a href="#">Pokedéx</a></h3>
+                                <p class="projeto__card-git">
+                                    <a href="#">Acessar repositório Git</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="projeto__card-externo">
+                            <div class="projeto__card-interno">
+                                <img src="./assets/img/projeto-poke.png" alt="teste" />
+                            </div>
+                            <div class="projeto__card-legenda">
+                                <h3 class="projeto__card-titulo"><a href="#">Pokedéx</a></h3>
+                                <p class="projeto__card-git">
+                                    <a href="#">Acessar repositório Git</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide projeto__box">
+                        <div class="projeto__card-externo">
+                            <div class="projeto__card-interno">
+                                <img src="./assets/img/projeto-poke.png" alt="teste" />
+                            </div>
+                            <div class="projeto__card-legenda">
+                                <h3 class="projeto__card-titulo"><a href="#">Pokedéx</a></h3>
+                                <p class="projeto__card-git">
+                                    <a href="#">Acessar repositório Git</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide projeto__box">
+                        <div class="projeto__card-externo">
+                            <div class="projeto__card-interno">
+                                <img src="./assets/img/projeto-poke.png" alt="teste" />
+                            </div>
+                            <div class="projeto__card-legenda">
+                                <h3 class="projeto__card-titulo"><a href="#">Pokedéx</a></h3>
+                                <p class="projeto__card-git">
+                                    <a href="#">Acessar repositório Git</a>
+                                </p>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <!-- <div class="swiper-pagination swiper-pagination2"></div> -->
+            </div>
+        </section>
+
+        <section class="footer" id="contatos">
+            <div class="bloco__trabalho">
+                <h3 class="bloco__titulo">Pronto para trabalhar!</h3>
+                <p class="bloco__texto">
+                    Espero que tenha gostado do que viu por aqui.<br />
+                    Faça contato comigo através desse link!
+                </p>
+                <a class="bloco__trabalho-botao" href="https://wa.me/5521983655478?text=Ol%C3%A1%20entre%20em%20contato%20comigo%20para%20saber%20mais." target="_blank">Fale Comigo</a>
+            </div>
+            <div class="footer__div">
+                <div class="footer__card-item">
+                    <p class="footer__card-legenda">Programado por</p>
+                    <h3 class="footer__card-nome">Gabriel Moura</h3>
+                    <div class="footer__card-icone">
+                        <a class="footer__card-icone-item" href="https://www.linkedin.com/in/gmoura1/" target="_blank"><img src="./assets/img/linkedinfooter.png" /></a>
+                        <a class="footer__card-icone-item" href="https://wa.me/5521983655478?text=Ol%C3%A1%20entre%20em%20contato%20comigo%20para%20saber%20mais." target="_blank"><img src="./assets/img/whatsappfooter.png" /></a>
+                        <a class="footer__card-icone-item" href="https://github.com/gmm9" target="_blank"><img src="./assets/img/githubfooter.png" /></a>
+                    </div>
+                    <p class="footer__card-email">gabrielm-97@hotmail.com</p>
+                </div>
+                <div class="footer__card-item">
+                    <p class="footer__card-legenda">Design por</p>
+                    <h3 class="footer__card-nome">Yago Amorim</h3>
+                    <div class="footer__card-icone">
+                        <a class="footer__card-icone-item" href="https://www.linkedin.com/in/yagoamorim/" target="_blank"><img src="./assets/img/linkedinfooter.png" /></a>
+                        <a class="footer__card-icone-item" href="https://wa.me/5521986040488?text=Entre%20em%20contato%20comigo%20sobre%20design." target="_blank"><img src="./assets/img/whatsappfooter.png" /></a>
+                        <a class="footer__card-icone-item" href="https://www.behance.net/yagoamorim1" target="_blank"><img src="./assets/img/behance.png" /></a>
+                        <!-- <a class="footer__card-icone-item" href="" target="_blank"><img src="./assets/img/artstation.png" /></a> -->
+                    </div>
+                    <p class="footer__card-email">yamorim014@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer__final">
+                <p class="footer__final-texto">Obrigado pela visita! &#9829;</p>
+                <p class="footer__final-cidade">Rio de Janeiro 2022 </p>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/cd4c098850.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/navbar.js"></script>
+    <script type="module" src="./assets/js/swiper.js"></script>
+    <script src="./assets/js/projetos.js"></script>
+</body>
+
+</html>

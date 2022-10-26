@@ -1,0 +1,113 @@
+.logo {
+    text-transform: uppercase;
+    font-weight: 400;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background: var(--cor-preto);
+    height: 11vh;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    align-items: center;
+    padding: 0 10px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+/* aqui para baixo vai ser nav lateral */
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.desktop-menu {
+    display: none;
+}
+
+.mobile-menu div{ 
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+
+
+    .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 60vw;
+        height: 92vh;
+        background: var(--cor-preto);
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+        box-shadow: -6px 1px 4px 3px rgba(0, 0, 0, 0.2);
+    }
+    .nav__itens {
+        margin-left: 0;
+        opacity: 0;
+        padding-top: 25px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav__itens-a {
+        padding-right: 10px;
+    }
+    .mobile-menu {
+        display: block;
+    }
+.nav-list.active {
+    transform: translateX(0);
+}
+
+#linha-horizontal {
+    width: calc(184px - 25px);
+    border: 1px solid var(--cor-branca);
+    opacity: 0.1;
+    margin: 30px auto;
+}
+.nav__contatos {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+}
+
+@media screen and (min-width: 768px){
+    .mobile-menu {
+        display: none;
+    }
+    .desktop-menu {
+        display: block;
+    }
+    .desktop-menu-itens {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+    ul.desktop-menu-itens > li:last-child {
+        margin-bottom: 0px;
+    }
+}
