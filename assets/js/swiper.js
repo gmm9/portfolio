@@ -26,5 +26,9 @@ var swiper3 = new Swiper('.swiper3', {
   pagination: {
     el: '.swiper-pagination3',
     clickable: true,
-  },
+  },loop: true,
+    autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+    }
 });
