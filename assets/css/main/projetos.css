@@ -24,6 +24,8 @@
 }
 .projeto__card-interno > img{
     width: 100%;
+    height: 270px;
+    border-radius: 30px;
 }
 
 .projeto__card-legenda {
@@ -81,9 +83,7 @@
     fill: black !important;
     stroke: black !important;
 }
-.projeto__card-interno > img {
-    height: 290px;
-}
+
 
 @media screen and (min-width: 768px){
     .swiper-slide.projeto__box {
